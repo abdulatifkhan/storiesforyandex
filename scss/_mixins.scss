@@ -1,0 +1,86 @@
+// Unstilled list
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+//font-sizes
+@mixin heading-sizes {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+}
+
+@mixin heading-text-sizes {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+
+// colors
+@mixin heading-color {
+  color: #261c00;
+}
+
+@mixin heading-text-color {
+  color: #bfbfbf;
+}
+
+// Psevdoelement triangle
+@mixin triangle ($direction, $size: 15px, $color: black) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  content: "";
+
+  @if $direction == "up" {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+  } @else if $direction == "down" {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+  } @else if $direction == "left" {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+  } @else if $direction == "right" {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  }
+}
+
+
+// Media so'rovlar uchun mixin
+@mixin breakpoint-down ($screen-width) {
+  @media only screen and (max-width: $screen-width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-up ($screen-width) {
+  @media only screen and (min-width: $screen-width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-between ($min-screen, $max-screen) {
+  @media only screen and (min-width: $min-screen) and (max-width: $max-screen) {
+    @content;
+  }
+}
+
+/* @include breakpoint-down (1000px) {
+  .demo__list {
+    background-color: green;
+  }
+
+  .demo__box--default {
+    background-color: black;
+  }
+} */
