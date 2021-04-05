@@ -1,0 +1,38 @@
+.button-wrapper {
+  // position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80px;
+}
+
+.button__button {
+  // position: relative;
+  // margin-top: 57px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button__button:hover .button__img {
+  display: none;
+}
+
+.button__img {
+  position: absolute;
+  z-index: 1;
+}
+
+.button__img, .button__img-hover {
+  width: 64px;
+  height: 64px;
+}
+
+.button__img--up, .button__img-hover--up{
+  transform: rotate(180deg);
+  margin-top: 30px;
+  margin-bottom: 57px;
+}
