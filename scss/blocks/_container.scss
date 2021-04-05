@@ -1,0 +1,14 @@
+.container {
+  max-width: 670px;
+  padding-left: 52px;
+  padding-right: 52px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include breakpoint-down ($mini-container) {
+  .container {
+    margin-top: 20px;
+  }
+}
