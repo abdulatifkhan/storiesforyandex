@@ -1,0 +1,116 @@
+.place-list {
+  @include reset-list;
+  display: flex;
+  align-items: flex-end;
+}
+
+.place-item {
+  width: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__first-place {
+    order: 3;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__second-place {
+    order: 4;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__third-place {
+    order: 2;
+  }
+
+  &__fourth-place {
+    order: 5;
+  }
+
+  &__fifth-place {
+    order: 1;
+  }
+}
+
+.place-item__img {
+  width: 64px;
+  height: 64px;
+  border-radius: 100px;
+}
+
+.place-item__name {
+  @include heading-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.place-item__name-number {
+  @include heading-text-color;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.place-item__place-box {
+  @include heading-color;
+  @include heading-sizes;
+  width: 105px;
+  margin-top: 16px;
+
+  &--center {
+    width: 120px;
+    height: 108px;
+    padding: 18px;
+    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8);
+    border-radius: 6px;
+  }
+
+  &--medium {
+    height: 88px;
+    padding: 18px;
+    background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(207, 207, 207, 0.5);
+    border-radius: 6px;
+  }
+
+  &--mini {
+    height: 68px;
+    padding: 8px;
+    background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(207, 207, 207, 0.5);
+    border-radius: 6px;
+  }
+}
+
+@include breakpoint-down ($mini-container) {
+
+  .place-item__fourth-place, .place-item__fifth-place {
+    display: none;
+  }
+
+  .place-item__place-box {
+  
+    &--center {
+      width: 120px;
+      height: 325px;
+    }
+
+    &--medium-right {
+      height: 275px;
+    }
+
+    &--medium-left {
+      height: 225px;
+    }
+  }
+  
+}
