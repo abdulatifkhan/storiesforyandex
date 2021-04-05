@@ -1,0 +1,24 @@
+.site-body__heading {
+  @include heading-sizes;
+  @include heading-color;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.site-body__heading-text {
+  @include heading-text-sizes;
+  @include heading-text-color;
+  margin-top: 8px;
+  margin-bottom: 28px;
+}
+
+@include breakpoint-down ($mini-container) {
+  .site-body__heading, .site-body__heading-text {
+    margin-top: 0px;
+    text-align: left;
+  }
+
+  .site-body__heading-text {
+    margin-bottom: 70px;
+  }
+}
