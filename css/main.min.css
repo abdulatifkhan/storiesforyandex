@@ -523,10 +523,33 @@ img {
           order: 1;
 }
 
-.place-item__img {
+.place-item__img-wrapper {
   width: 64px;
   height: 64px;
   border-radius: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.place-item__img-wrapper--first-place {
+  background-image: url("../../images/1x/darya-kovaleva.jpg");
+}
+
+.place-item__img-wrapper--second-place {
+  background-image: url("../../images/1x/sergey-berejnoy.jpg");
+}
+
+.place-item__img-wrapper--third-place {
+  background-image: url("../../images/1x/dmitriy-andriyanov.jpg");
+}
+
+.place-item__img-wrapper--fourth-place {
+  background-image: url("../../images/1x/andrey-mokrousov.jpg");
+}
+
+.place-item__img-wrapper--fifth-place {
+  background-image: url("../../images/1x/aleksandr-ivankov.jpg");
 }
 
 .place-item__name {
