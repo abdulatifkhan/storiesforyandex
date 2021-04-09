@@ -22,3 +22,9 @@
     margin-bottom: 70px;
   }
 }
+
+@include breakpoint-down (580px) {
+  .site-body__heading-chart {
+    padding-left: 24px;
+  }
+}
