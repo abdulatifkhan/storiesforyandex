@@ -7,8 +7,22 @@
   margin-right: auto;
 }
 
+@include breakpoint-down (660px) {
+  .container {
+    margin-top: 20px;
+  }
+}
+
 @include breakpoint-down ($mini-container) {
   .container {
     margin-top: 20px;
+  }
+}
+
+@include breakpoint-down (580px) {
+  .container {
+    // padding-right: 24px;
+    // padding-left: 24px;
+    padding: 0;
   }
 }
