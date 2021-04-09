@@ -1,0 +1,168 @@
+.chart-list {
+  @include reset-list;
+  @include heading-text-color;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.chart-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chart-li ~ .chart-li {
+  margin-left: 24px;
+}
+
+.chart-commit {
+  @include heading-sizes-medium;
+  display: block;
+}
+
+.chart-sprint {
+  @include heading-text-sizes;
+  display: block;
+}
+
+
+.chart-column {
+  @include background-color-gray;
+  display: block;
+  height: 8px;
+  width: 40px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+
+  &__112 {
+    height: 72px;
+ 
+  }
+
+  &__152 {
+    height: 98px;
+  }
+
+  &__128 {
+    height: 82px;
+  }
+
+  &__164 {
+    height: 105px;
+  }
+
+  &__118 {
+    height: 76px;
+  }
+
+  &__140 {
+    height: 90px;
+  }
+
+  &__182 {
+    @include background-color-yellow;
+    height: 117px;
+  }
+}
+
+.chart-member {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 474px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.chart-member__info {
+  display: flex;
+  width: 220px;
+}
+
+.chart-member__border {
+  width: 2px;
+  height: 40px;
+  background-color: #BFBFBF;
+  opacity: 0.3;
+}
+
+.chart-member__img {
+  display: inline-block;
+  margin: 0px 14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+.chart-member__name {
+  @include heading-text-sizes;
+  @include heading-color;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.chart-member__number {
+  @include heading-sizes-mini;
+  @include heading-text-color;
+  display: block;
+}
+
+@include breakpoint-down (660px) {
+  .chart-li__none-first {
+    display: none;
+  }
+}
+
+@include breakpoint-down (580px) {
+
+  // .chart-list {
+  //   overflow: scroll;
+  // } 
+
+  .chart-li__none {
+    display: none;
+  }
+
+  .chart-member {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .chart-member__border {
+    display: block;
+    height: 2px;
+    width: 85%;
+    background-color: #BFBFBF;
+    opacity: 0.3;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+  }
+
+  .chart-column {
+  
+    &__164 {
+      height: 243px;
+    }
+  
+    &__118 {
+      height: 175px;
+    }
+  
+    &__140 {
+      height: 207px;
+    }
+  
+    &__182 {
+      @include background-color-yellow;
+      height: 270px;
+    }
+  }
+}
+
+// @include breakpoint-down (376px) {
+//   .chart-member__border {
+//     width: 100%;
+//   }
+// }
