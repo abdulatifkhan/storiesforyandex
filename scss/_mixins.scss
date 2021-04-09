@@ -13,11 +13,25 @@
   text-align: center;
 }
 
+@mixin heading-sizes-medium {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+}
+
 @mixin heading-text-sizes {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
+}
+
+@mixin heading-sizes-mini {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 // colors
@@ -27,6 +41,18 @@
 
 @mixin heading-text-color {
   color: #bfbfbf;
+}
+
+@mixin background-color-gray {
+  background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
+  box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(207, 207, 207, 0.5);
+  border-radius: 6px;
+}
+
+@mixin background-color-yellow {
+  background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
+  box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8);
+  border-radius: 6px;
 }
 
 // Psevdoelement triangle
