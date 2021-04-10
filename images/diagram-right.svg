@@ -1,0 +1,27 @@
+<svg width="76" height="109" viewBox="0 0 76 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_ii)">
+<path d="M69.834 108.149C73.1429 108.328 75.9859 105.79 75.9991 102.476C76.0786 82.4691 71.1533 62.7248 61.6295 45.0578C52.1056 27.3907 38.3187 12.4235 21.5615 1.49278C18.786 -0.317636 15.1028 0.662091 13.4333 3.52454L1.34209 24.2562C-0.327358 27.1187 0.654027 30.775 3.39003 32.6445C14.4451 40.1982 23.5597 50.3037 29.9406 62.1404C36.3216 73.9772 39.7535 87.1461 39.9873 100.533C40.0451 103.847 42.5601 106.676 45.869 106.855L69.834 108.149Z" fill="url(#paint0_radial)" fill-opacity="0.6"/>
+</g>
+<defs>
+<filter id="filter0_ii" x="-0.476929" y="0.578003" width="76.477" height="108.58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.69 0 0 0 0 0.225 0 0 0 0.4 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-1" dy="1"/>
+<feGaussianBlur stdDeviation="0.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow"/>
+</filter>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-44.3762 102.376) rotate(90) scale(119.624)">
+<stop offset="0.8125" stop-color="#FFB800" stop-opacity="0.4"/>
+<stop offset="1" stop-color="#FFEF99" stop-opacity="0.2"/>
+</radialGradient>
+</defs>
+</svg>
