@@ -7,6 +7,21 @@
   margin-right: auto;
 }
 
+.container-diagram {
+  max-width: 770px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include breakpoint-down ($mini-container) {
+  .container-diagram {
+    padding: 0;
+  }
+}
+
 @include breakpoint-down (660px) {
   .container {
     margin-top: 20px;
