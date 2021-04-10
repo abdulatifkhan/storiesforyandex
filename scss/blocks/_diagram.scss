@@ -1,0 +1,138 @@
+.site-body__diagram {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.diagram-1 {
+  position: relative;
+  width: 299px;
+  height: 250px;
+  margin-left: 25px;
+}
+
+.diagram-2 {
+  padding-left: 40px;
+}
+
+.diagram-img__left {
+  position: absolute;
+  left: 2px;
+  top: 25px;
+}
+
+.diagram-img__top {
+  position: absolute;
+  bottom: 200px;
+  left: 65px;
+}
+
+.diagram-img__right {
+  position: absolute;
+  left: 167px;
+  bottom: 117px;
+}
+
+.diagram-img__bottom {
+  position: absolute;
+  bottom: 3px;
+  left: 70px;
+}
+
+.img-info {
+  width: 120px;
+  position: absolute;
+  bottom: 78px;
+  left: 62px;
+  z-index: 5;
+}
+
+.diagram-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-info__commit {
+  @include heading-sizes-medium;
+  @include heading-color;
+  display: block;
+  text-align: center;
+}
+
+.img-info__sprint {
+  @include heading-text-sizes;
+  @include heading-text-color;
+  display: block;
+  text-align: center;
+}
+
+.diagram-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.diagram-info:not(:last-child) {
+  border-bottom: 2px solid rgba(145, 143, 138, 0.3);
+  width: 345px;
+}
+
+.diagram-info__point-text {
+  display: flex;
+  align-items: center;
+}
+
+.diagram-info__point {
+  display: block;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+
+  &--height {
+    background-color: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.9);
+  }
+  
+  &--medium-height {
+    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.4);
+  }
+  
+  &--medium-low {
+    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.1725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(105, 105, 105, 0.2);
+  }
+
+  &--low {
+    background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(131, 131, 131, 0.6);
+  }
+}
+
+.diagram-info__text {
+  @include heading-text-sizes;
+  @include heading-color;
+}
+
+.diagram-info__number {
+  @include heading-text-sizes;
+  @include heading-text-color;
+  margin-right: 10px;
+}
+
+@include breakpoint-down ($mini-container) {
+  .site-body__diagram {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .diagram-1 {
+    margin-left: 50px;
+  }
+  
+  .diagram-2 {
+    padding-left: 0px;
+  }
+}
